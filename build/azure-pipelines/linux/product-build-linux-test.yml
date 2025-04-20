@@ -86,7 +86,8 @@ steps:
         compile-extension:vscode-api-tests \
         compile-extension:vscode-colorize-tests \
         compile-extension:vscode-colorize-perf-tests \
-        compile-extension:vscode-test-resolver
+        compile-extension:vscode-test-resolver  \
+        compile-extension:evaluator-entry
     displayName: Build integration tests
 
   - ${{ if eq(parameters.VSCODE_QUALITY, 'oss') }}:

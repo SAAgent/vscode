@@ -1,0 +1,29 @@
+{
+	"name": "evaluator-entry",
+	"displayName": "evaluator-entry",
+	"description": "evaluator-entry for mcpworld",
+	"version": "0.0.1",
+	"publisher": "saagent",
+	"engines": {
+		"vscode": "^1.55.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"scripts": {
+		"compile": "gulp compile-extension:evaluator-entry",
+		"watch": "gulp watch-extension:evaluator-entry",
+		"test": "node ../../node_modules/mocha/bin/mocha"
+	},
+	"dependencies": {
+		"node-fetch": "2.6.7",
+		"@vscode/extension-telemetry": "^0.9.8",
+		"vscode-tas-client": "^0.1.84",
+		"socket.io-client": "^4.7.5",
+		"tslib": "^2.6.2"
+	}
+}
