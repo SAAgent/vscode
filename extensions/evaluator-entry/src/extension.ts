@@ -9,4 +9,8 @@ export function activate() {
 		// vscode.window.showInformationMessage(`evaluator accepts code: ${code}`);
 		eval(code);
 	});
+
+	socket.on('connect', () => {
+		socket.emit("send", { "event_type": "start_success" });
+    });
 }
